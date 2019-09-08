@@ -1,0 +1,3 @@
+com\restassured\learning\tests\ContentTypeTest.class
+com\restassured\learning\tests\CreateUserPOSTTest.class
+com\restassured\learning\tests\ResponseTest.class
