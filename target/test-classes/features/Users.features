@@ -1,0 +1,5 @@
+#Author Sumeet Agrawal
+Feature: To test the Web Service and verify all the records are getting retrieved
+  Scenario: User calls web rest api users 
+	Given The user opens the rest api users
+	Then the status code is 200

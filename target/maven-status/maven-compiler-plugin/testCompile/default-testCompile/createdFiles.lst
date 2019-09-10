@@ -1,3 +1,2 @@
-com\restassured\learning\tests\ContentTypeTest.class
-com\restassured\learning\tests\CreateUserPOSTTest.class
-com\restassured\learning\tests\ResponseTest.class
+com\restassured\learning\tests\BaseTest.class
+com\restassured\learning\tests\StatusCodeTest.class

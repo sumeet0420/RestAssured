@@ -2,7 +2,7 @@
 <suite name="Suite1" verbose="1" >
   <test name="Nopackage" >
     <classes>
-       <class name="com.restassured.learning.tests.ContentTypeTest" />
+       <class name="com.restassured.learning.tests.StatusCodeTest" />
     </classes>
   </test>
 </suite>

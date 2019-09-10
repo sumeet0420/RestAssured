@@ -4,9 +4,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.restassured.learning.pom.User;
+import com.restassured.pom.PostsReponse;
 
 import io.restassured.path.json.JsonPath;
 import io.restassured.path.xml.XmlPath;
@@ -18,17 +19,6 @@ public class SupportUtilities {
 		return new JsonPath(response.asString());
 	}
 	
-	public static String createUserJson(String user,String job) throws JsonProcessingException{
-		ObjectMapper obj = new ObjectMapper();
-			return obj.writeValueAsString(new User(user, job));
-	}
-
-	public static String createUserJson(User user) throws JsonProcessingException{
-		ObjectMapper obj = new ObjectMapper();
-			return obj.writeValueAsString(user);
-	}
-	
-	
 	public static JsonPath parseJson(String response) {
 		return new JsonPath(response);
 	}
@@ -39,6 +29,12 @@ public class SupportUtilities {
 
 	public static XmlPath parseXml(String response) {
 		return new XmlPath(response);
+	}
+	
+	public static PostsReponse createPostsJson(String response) throws JsonParseException, JsonMappingException, IOException {
+		
+		ObjectMapper objectMapper = new ObjectMapper();
+		return objectMapper.readValue(response, PostsReponse.class);
 	}
 
 	public static String fileToString(String path) throws IOException {

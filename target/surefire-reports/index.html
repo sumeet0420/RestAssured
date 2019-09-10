@@ -2,9 +2,10 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -23,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.StatusCodeTest" class="method navigator-link" hash-for-method="verifyStatusCodeForComments">verifyStatusCodeForComments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,42 +116,22 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.CreateUserPOSTTest" class="method navigator-link" hash-for-method="createUser">createUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.PostsTest" class="method navigator-link" hash-for-method="verifyPost">verifyPost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.datadriventesting.CreateUsersTest" class="method navigator-link" hash-for-method="createUsersDDT(user2, job2)">createUsersDDT(user2, job2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.UsersTest" class="method navigator-link" hash-for-method="verifyPost">verifyPost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.datadriventesting.CreateUsersTest" class="method navigator-link" hash-for-method="createUsersDDT(user1, job1)">createUsersDDT(user1, job1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.StatusCodeTest" class="method navigator-link" hash-for-method="verifyStatusCodeForPosts">verifyStatusCodeForPosts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.GetAllUsersTest" class="method navigator-link" hash-for-method="getAllUsers">getAllUsers</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.ContentTypeTest" class="method navigator-link" hash-for-method="getUsers">getUsers</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.OrchesrationCreateDeleteTest" class="method navigator-link" hash-for-method="main">main</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.StatusCodeTest" class="method navigator-link" hash-for-method="smokeTest">smokeTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.ResponseTest" class="method navigator-link" hash-for-method="validateResponse">validateResponse</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.restassured.learning.tests.StatusCodeTest" class="method navigator-link" hash-for-method="verifyStatusCodeForUsers">verifyStatusCodeForUsers</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -151,53 +146,115 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-passed">
+          <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.restassured.learning.tests.GetAllUsersTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.restassured.learning.tests.StatusCodeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getAllUsers">
-                  </a> <!-- getAllUsers -->
-                  <span class="method-name">getAllUsers</span>
+                  <a name="verifyStatusCodeForComments">
+                  </a> <!-- verifyStatusCodeForComments -->
+                  <span class="method-name">verifyStatusCodeForComments</span>
+                  <div class="stack-trace">org.apache.http.NoHttpResponseException: jsonplaceholder.typicode.com:80 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:207)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2054)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1450)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1199)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:151)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1654)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1660)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:184)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1041)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:821)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:255)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at com.restassured.learning.tests.StatusCodeTest.verifyStatusCodeForComments(StatusCodeTest.java:20)
+... Removed 60 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Getting all the users)                  </em>
+(Verify status code for Comments)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.restassured.learning.tests.ResponseTest</span>
+              <span class="class-name">com.restassured.learning.tests.UsersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateResponse">
-                  </a> <!-- validateResponse -->
-                  <span class="method-name">validateResponse</span>
+                  <a name="verifyPost">
+                  </a> <!-- verifyPost -->
+                  <span class="method-name">verifyPost</span>
                   <em>
-(Validate Response grom GET method.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.restassured.learning.tests.ContentTypeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getUsers">
-                  </a> <!-- getUsers -->
-                  <span class="method-name">getUsers</span>
-                  <em>
-(Get Users and verify Content Type as JSON)                  </em>
+(Verify that all 100 users ids are getting retrieved.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,11 +267,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="smokeTest">
-                  </a> <!-- smokeTest -->
-                  <span class="method-name">smokeTest</span>
+                  <a name="verifyStatusCodeForPosts">
+                  </a> <!-- verifyStatusCodeForPosts -->
+                  <span class="method-name">verifyStatusCodeForPosts</span>
                   <em>
-(Verify status code)                  </em>
+(Verify status code for Posts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStatusCodeForUsers">
+                  </a> <!-- verifyStatusCodeForUsers -->
+                  <span class="method-name">verifyStatusCodeForUsers</span>
+                  <em>
+(Verify status code for Users)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,57 +288,16 @@
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.restassured.learning.tests.OrchesrationCreateDeleteTest</span>
+              <span class="class-name">com.restassured.learning.tests.PostsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="main">
-                  </a> <!-- main -->
-                  <span class="method-name">main</span>
+                  <a name="verifyPost">
+                  </a> <!-- verifyPost -->
+                  <span class="method-name">verifyPost</span>
                   <em>
-(Checking the flow)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.restassured.learning.datadriventesting.CreateUsersTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createUsersDDT(user2, job2)">
-                  </a> <!-- createUsersDDT(user2, job2) -->
-                  <span class="method-name">createUsersDDT</span>
-                  <span class="parameters">(user2, job2)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createUsersDDT(user1, job1)">
-                  </a> <!-- createUsersDDT(user1, job1) -->
-                  <span class="method-name">createUsersDDT</span>
-                  <span class="parameters">(user1, job1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.restassured.learning.tests.CreateUserPOSTTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createUser">
-                  </a> <!-- createUser -->
-                  <span class="method-name">createUser</span>
-                  <em>
-(Verify User is created through POST method)                  </em>
+(Verify that posts id 24 is retrieving correct details)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -286,16 +311,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.restassured.learning.datadriventesting.CreateUsersTest&quot;/&gt;
       &lt;class name=&quot;com.restassured.learning.tests.BaseTest&quot;/&gt;
-      &lt;class name=&quot;com.restassured.learning.tests.ContentTypeTest&quot;/&gt;
-      &lt;class name=&quot;com.restassured.learning.tests.CreateUserPOSTTest&quot;/&gt;
-      &lt;class name=&quot;com.restassured.learning.tests.GetAllUsersTest&quot;/&gt;
-      &lt;class name=&quot;com.restassured.learning.tests.OrchesrationCreateDeleteTest&quot;/&gt;
-      &lt;class name=&quot;com.restassured.learning.tests.ResponseTest&quot;/&gt;
+      &lt;class name=&quot;com.restassured.learning.tests.PostsTest&quot;/&gt;
       &lt;class name=&quot;com.restassured.learning.tests.StatusCodeTest&quot;/&gt;
+      &lt;class name=&quot;com.restassured.learning.tests.UsersTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -309,7 +330,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (8 classes)</span>
+                <span class="test-name">Command line test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -335,44 +356,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getUsers')
-data.setCell(0, 2, 'com.restassured.learning.tests.ContentTypeTest')
-data.setCell(0, 3, 6686);
+data.setCell(0, 1, 'verifyPost')
+data.setCell(0, 2, 'com.restassured.learning.tests.UsersTest')
+data.setCell(0, 3, 62683);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createUser')
-data.setCell(1, 2, 'com.restassured.learning.tests.CreateUserPOSTTest')
-data.setCell(1, 3, 2436);
+data.setCell(1, 1, 'verifyStatusCodeForPosts')
+data.setCell(1, 2, 'com.restassured.learning.tests.StatusCodeTest')
+data.setCell(1, 3, 47624);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getAllUsers')
-data.setCell(2, 2, 'com.restassured.learning.tests.GetAllUsersTest')
-data.setCell(2, 3, 1393);
+data.setCell(2, 1, 'verifyStatusCodeForComments')
+data.setCell(2, 2, 'com.restassured.learning.tests.StatusCodeTest')
+data.setCell(2, 3, 43540);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateResponse')
-data.setCell(3, 2, 'com.restassured.learning.tests.ResponseTest')
-data.setCell(3, 3, 703);
+data.setCell(3, 1, 'verifyPost')
+data.setCell(3, 2, 'com.restassured.learning.tests.PostsTest')
+data.setCell(3, 3, 14653);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'createUsersDDT')
-data.setCell(4, 2, 'com.restassured.learning.datadriventesting.CreateUsersTest')
-data.setCell(4, 3, 578);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'createUsersDDT')
-data.setCell(5, 2, 'com.restassured.learning.datadriventesting.CreateUsersTest')
-data.setCell(5, 3, 533);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'main')
-data.setCell(6, 2, 'com.restassured.learning.tests.OrchesrationCreateDeleteTest')
-data.setCell(6, 3, 515);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'smokeTest')
-data.setCell(7, 2, 'com.restassured.learning.tests.StatusCodeTest')
-data.setCell(7, 3, 469);
+data.setCell(4, 1, 'verifyStatusCodeForUsers')
+data.setCell(4, 2, 'com.restassured.learning.tests.StatusCodeTest')
+data.setCell(4, 3, 11025);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -387,25 +396,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.restassured.learning.tests.ResponseTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUp</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.restassured.learning.tests.ContentTypeTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUp</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.restassured.learning.tests.BaseTest</span>
+              <span class="ignored-class-name">com.restassured.learning.tests.UsersTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
@@ -419,14 +414,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.restassured.learning.tests.OrchesrationCreateDeleteTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUp</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.restassured.learning.tests.CreateUserPOSTTest</span>
+              <span class="ignored-class-name">com.restassured.learning.tests.PostsTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
@@ -440,63 +428,41 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.restassured.learning.datadriventesting.CreateUsersTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.restassured.learning.tests.BaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.restassured.learning.tests.ContentTypeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.restassured.learning.tests.PostsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">getUsers</span>
-                <span class="method-start">1187 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.restassured.learning.tests.CreateUserPOSTTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">createUser</span>
-                <span class="method-start">7882 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.restassured.learning.datadriventesting.CreateUsersTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">createUsersDDT(user1, job1)</span>
-                <span class="method-start">10334 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">createUsersDDT(user2, job2)</span>
-                <span class="method-start">10867 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.restassured.learning.tests.GetAllUsersTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">getAllUsers</span>
-                <span class="method-start">11453 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.restassured.learning.tests.OrchesrationCreateDeleteTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">main</span>
-                <span class="method-start">12846 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.restassured.learning.tests.ResponseTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">validateResponse</span>
-                <span class="method-start">13361 ms</span>
+                <span class="method-name">verifyPost</span>
+                <span class="method-start">1193 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.restassured.learning.tests.StatusCodeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">smokeTest</span>
-                <span class="method-start">14064 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyStatusCodeForComments</span>
+                <span class="method-start">15850 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyStatusCodeForPosts</span>
+                <span class="method-start">59486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyStatusCodeForUsers</span>
+                <span class="method-start">107111 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.restassured.learning.tests.UsersTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyPost</span>
+                <span class="method-start">118136 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
