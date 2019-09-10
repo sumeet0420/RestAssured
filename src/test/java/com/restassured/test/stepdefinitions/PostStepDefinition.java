@@ -7,7 +7,7 @@ import cucumber.api.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-import static com.restassured.learning.utilities.SupportUtilities.parseJson;
+import static com.restassured.utilities.SupportUtilities.parseJson;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasSize;

@@ -1,7 +1,9 @@
 package com.restassured.pom;
 
 import java.util.List;
-import com.restassured.learning.utilities.SupportUtilities;
+
+import com.restassured.utilities.SupportUtilities;
+
 import io.restassured.path.json.JsonPath;
 
 public class PostsReponse {

@@ -1,4 +1,4 @@
-package com.restassured.learning.utilities;
+package com.restassured.utilities;
 
 import java.io.IOException;
 import java.nio.file.Files;
