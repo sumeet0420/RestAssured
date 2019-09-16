@@ -5,13 +5,22 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
 import java.util.Properties;
 
 import cucumber.api.java.Before;
 import io.restassured.RestAssured;
 
 public class BaseTest {
-
+	
+	public static String url;
+	public static String resources;
+	public static String URI = "";
+	
+	public static String getURI() {
+		return url+resources;
+	}
+	
 	/**
 	 * @author Agrawal
 	 * This method sets up the URL. 
